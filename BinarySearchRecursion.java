@@ -5,7 +5,7 @@ public class BinarySearchRecursion {
         System.out.println(bS(arr, 0, arr.length-1, 16)); // Output
     }
 
-    public static int bS(int[] arr, int left, int right, int target){ // Recursice Function
+    public static int bS(int[] arr, int left, int right, int target){ // Recursive Function
 
         if(left > right){ // Base case
             return -1;
