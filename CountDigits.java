@@ -7,9 +7,9 @@ public class CountDigits {
 
     public static int countDigits(int n, int count){
         if(n == 0){
-            return count;
+            return count; //base case
         }
         count++;
-        return countDigits(n/10, count);
+        return countDigits(n/10, count); //recursive call
     }
 }
