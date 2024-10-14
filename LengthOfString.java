@@ -6,9 +6,9 @@ public class LengthOfString {
 
     public static int stringLength(String s, int i, int len){
         if(i >= s.length()){
-            return len;
+            return len; //base case
         }
         len++;
-        return stringLength(s, i+1, len);
+        return stringLength(s, i+1, len); //recursive call
     }
 }
