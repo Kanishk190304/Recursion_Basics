@@ -7,11 +7,11 @@ public class PrimeNumber {
 
     public static boolean isPrime(int n, int i){
         if(i > n/2){
-            return true;
+            return true; //base case
         }
         if(n % i == 0){
             return false;
         }
-        return isPrime(n, i+1);
+        return isPrime(n, i+1); //recursive call
     }
 }
