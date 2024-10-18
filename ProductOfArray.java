@@ -7,9 +7,9 @@ public class ProductOfArray {
 
     public static int productOfArray(int[] arr, int product, int i){
         if(i >= arr.length){
-            return product;
+            return product; //base case
         }
         product *= arr[i];
-        return productOfArray(arr, product, i+1);
+        return productOfArray(arr, product, i+1); //recursive call
     }
 }
