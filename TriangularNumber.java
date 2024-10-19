@@ -7,9 +7,9 @@ public class TriangularNumber {
 
     public static int triangularNum(int n, int i, int t){
         if(i > n){
-            return t;
+            return t; //base case
         }
         t = t + i;
-        return triangularNum(n, i+1, t);
+        return triangularNum(n, i+1, t); //recursive call
     }
 }
