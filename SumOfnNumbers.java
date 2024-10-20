@@ -7,8 +7,8 @@ public class SumOfnNumbers {
 
     public static int findSum(int n){
         if(n==0){
-            return 0;
+            return 0; //base case
         }
-        return n + findSum(n-1);
+        return n + findSum(n-1); //recursive call
     }
 }
