@@ -6,10 +6,10 @@ public class DecimaltoBinary {
     }
 
     public static int dectobin(int dec, int bin, int i){
-        if(dec == 0){
+        if(dec == 0){ //base case
             return bin;
         }
         bin = bin + (dec % 2) * (int)Math.pow(10, i);
-        return dectobin(dec/2, bin, i+1);
+        return dectobin(dec/2, bin, i+1); //recursive call
     } 
 }
