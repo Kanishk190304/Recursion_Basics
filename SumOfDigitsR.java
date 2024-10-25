@@ -11,9 +11,9 @@ public class SumOfDigitsR {
 
     public static int findSum(int n, int sum){
         if(n==0){
-            return sum; // Base case
+            return sum; //Base case
         }
         sum += n%10;
-        return findSum(n/10, sum); // Recursive call
+        return findSum(n/10, sum); //Recursive call
     }
 }
