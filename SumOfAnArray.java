@@ -19,10 +19,10 @@ public class SumOfAnArray {
 
     public static int calSum(int sum, int[] arr, int i){
 
-        if(i >= arr.length){
+        if(i >= arr.length){ //base case
             return sum;
         }
         sum += arr[i];
-        return calSum(sum, arr, i+1);
+        return calSum(sum, arr, i+1); //recursive call
     }
 }
