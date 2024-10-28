@@ -6,12 +6,12 @@ public class CheckArraySorted {
     }
 
     public static boolean check(int[] arr, int i){
-        if(i >= arr.length-1){
+        if(i >= arr.length-1){ //base case
             return true;
         }
         if(arr[i] > arr[i+1]){
             return false;
         }
-        return check(arr, i+1);
+        return check(arr, i+1); //recursive call
     }
 }
