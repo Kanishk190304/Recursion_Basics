@@ -8,12 +8,12 @@ public class FibonacciMemo {
 
     public static int fibo(int n, int[] memo){
         if(n <= 1){
-            return n; // base case
+            return n; //base case
         }
-        if(memo[n] != 0){ // already calculated
+        if(memo[n] != 0){ //already calculated
             return memo[n];
         }
-        memo[n] = fibo(n-1, memo) + fibo(n-2, memo); // recursive calls
+        memo[n] = fibo(n-1, memo) + fibo(n-2, memo); //recursive calls
         return memo[n];
     }
 }
